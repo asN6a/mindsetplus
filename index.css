@@ -1,0 +1,354 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color-0);
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/*---- Variaveis ----*/
+:root {
+  /* Light Mode */
+  --background-color-0: #ffffff;
+  --background-color-1: #e1ebff;
+  
+  --color-0: #029403;
+  
+  --random-color-0: #ffc400;
+  --random-color-1: #009fff;
+  --random-color-2: #cc1616;
+  
+  --border-color-0: #cccccc;
+  
+  --font-color-0: #000000;
+  --font-color-1: #2c2c2c;
+}
+
+/*---- Desperte Sua Essência ----*/
+.main {
+  color: var(--font-color-0);
+  margin: 0px;
+}
+
+/*---- Header ----*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 2px solid var(--border-color-0);
+  height: 4em;
+}
+
+/* Header Left */
+.header-left h1 {
+  color: var(--color-0);
+}
+
+/* Header Middle */
+.header-middle nav a {
+  color: var(--font-color-0);
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.header-middle nav a:hover {
+  color: var(--color-0);
+}
+
+/* Header Right */
+.header-right button {
+  height: 40px;
+  width: 120px;
+  font-size: 15px;
+  background: none;
+  color: var(--font-color-0);
+  border: 1px solid var(--color-0);
+  border-radius: 40px;
+  transition: all 0.5s;
+}
+
+.header-right button:hover {
+  background: var(--color-0);
+}
+
+/*---- Content ----*/
+.content {
+  
+}
+
+.content-articles {
+  margin: 30px;
+}
+/* content-articles */
+.home_content-textbox-container {
+  height: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  gap: 14px;
+}
+
+.home_content-textbox-container strong {
+  color: var(--color-0);
+}
+
+.home_content-textbox-container p {
+  width: 50%;
+  font-size: 20px;
+}
+
+/*---- Filter Genre ----*/
+.home_content-container-filter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#genre-select {
+  height: 40px;
+  width: 220px;
+  padding: 5px;
+  background: none;
+  color: var(--font-color-0);
+  border: 1px solid var(--color-0);
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.5s;
+}
+
+#genre-select:hover {
+  background: var(--color-0);
+}
+
+/*Article Content*/
+.article-section-title {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.home_content-articles-section {
+  width: 100%;
+  column-count: 3; /* Define o número de colunas */
+  column-gap: 20px; /* Define o espaçamento entre as colunas */
+  margin-top: 10px;
+}
+
+.article-box-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-conte;
+  background: var(--background-color-1);
+  border-radius: 13px;
+  transition: all 0.5s;
+  margin-bottom: 20px; /* Define o espaçamento entre os artigos */
+  break-inside: avoid; /* Evita que um artigo seja dividido entre colunas */
+}
+
+.article-img img {
+  width: 100%;
+  height: 22em;
+  object-fit: cover;
+}
+
+.article-box-textbox {
+  padding: 10px;
+  color: var(--font-color-0);
+}
+
+.article-information {
+  color: var(--font-color-1);
+  height: 25px;
+}
+
+.article-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/*---- footer ----*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  color: var(--font-color-0);
+}
+
+.footer-social-medias a {
+  font-size: 35px;
+  color: var(--font-color-0);
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.footer-social-medias a:hover {
+  color: var(--color-0);
+}
+
+.footer-website-options a{
+  color: var(--font-color-0);
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.footer-website-options a:hover {
+  color: var(--color-0);
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 480px){
+  header {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-left {
+    display: none;
+  }
+  .header-middle nav a{
+    font-size: 15px;
+    padding: 10px;
+  }
+  .header-right {
+    display: none;
+  }
+  
+  .content-articles {
+    margin: 15px;
+  }
+  .home_content-textbox-container {
+    font-size: 25px;
+    text-align: left;
+    height: 13em;
+  }
+  .home_content-textbox-container p {
+    width: 65%;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .home_content-container-filter {
+    display: none;
+  }
+  
+  .article-section-title {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  .home_content-articles-section {
+    column-count: 1;
+  }
+  .article-img img {
+    height: 14em;
+  }
+  .article-information {
+    font-size: 15px;
+  }
+  .article-title {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  
+  .footer-website-options a {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-textbox {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+/* Responsive Tablet */
+@media screen and (max-width: 800px) and (min-width: 481px){
+  header {
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+  }
+  .header-left {
+    font-size: 20px;
+  }
+  .header-middle nav a{
+    font-size: 20px;
+    padding: 5px;
+  }
+  .header-right {
+    display: none;
+  }
+  
+  .content-articles {
+    margin: 15px auto;
+    width: 70%;
+  }
+  .home_content-textbox-container {
+    font-size: 40px;
+    text-align: left;
+    height: 10em;
+  }
+  .home_content-textbox-container p {
+    width: 80%;
+    font-size: 60%;
+    font-weight: 400;
+  }
+  
+  .home_content-container-filter {
+    display: none;
+  }
+  
+  .article-section-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .home_content-articles-section {
+    column-count: 1;
+  }
+  .article-img img {
+    height: 14em;
+  }
+  .article-information {
+    font-size: 100%;
+  }
+  .article-title {
+    font-size: 100%;
+    margin-top: 5px;
+  }
+  .article-description {
+    font-size: 100%;
+  }
+
+  .footer-textbox {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+  }
+}
