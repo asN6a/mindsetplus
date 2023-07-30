@@ -153,25 +153,16 @@ header {
   gap: 12px;
 }
 
-.filter-search-div {
+#search-filter {
+  height: 35px;
   background: none;
   border: 1px solid var(--color-0);
+  padding: 10px;
+  font-size: 10px;
+  color: var(--font-color-1);
   border-radius: 2px;
   outline: none;
   box-decoration-break: none;
-  height: 35px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#search-filter {
-  font-size: 5px;
-  color: var(--font-color-1);
-  background: none;
-  outline: none;
-  border: none;
 }
 
 select {
