@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="src/index.js"></script>
   <title>MindSetPlus</title>
   
   <meta property="og:image" content="./src/img/mindsetplus.png">
@@ -42,9 +41,23 @@
           <p>Desperte Seu Potencial: Inspiração e Orientação para o Desenvolvimento Pessoal.</p>
         </div>
         <h1 class="article-section-title" id="articles_section">Artigos</h1>
+        <div class="articles-filter">
+          <div class="filter-search-div">
+            <label for="search-filter">Pesquise...</label>
+            <input type="search" name="search-filter" id="search-filter" >
+          </div>
+          
+          <select name="filter-select" id="select-filter" >
+            <option value="op-0">Todos</option>
+            <option value="op-1">Equilibrio Pessoal</option>
+            <option value="op-2">Saúde e Bem-estar</option>
+            <option value="op-3">Vida Pessoal e Profissional</option>
+            <option value="op-4">Meditação</option>
+          </select>
+        </div>
         <div class="home_content-articles-section">
           
-          <div class="article-box-content">
+          <div class="article-box-content" data-category="op-1">
             <a href="pages/article_001_dormir.html">
               <div class="article-img">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDvbBMqKCO1A5RN6zPWCVmDp_fJkjTfwRr0A&usqp=CAU" alt="" />
@@ -62,7 +75,7 @@
               </div>
             </a>
           </div> <!--- Como Ter Uma Boa Noite De Sono --->
-          <div class="article-box-content">
+          <div class="article-box-content" data-category="op-2">
             <a href="pages/article_002_ansiedade.html">
               <div class="article-img">
                 <img src="https://blog.portalpos.com.br/app/uploads/2021/08/transtorno-de-ansiedade-generalizada.jpg" alt="" />
@@ -80,7 +93,7 @@
               </div>
             </a>
           </div> <!--- Ansiedade --->
-          <div class="article-box-content">
+          <div class="article-box-content" data-category="op-3">
             <a href="pages/article_003_cachorro.html">
               <div class="article-img">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi7qgu9q-DdDienwxv2a8kf9s1SL1J8xbV3Q&usqp=CAU" alt="" />
@@ -98,7 +111,7 @@
               </div>
             </a>
           </div> <!--- Cachorros --->
-          <div class="article-box-content">
+          <div class="article-box-content" data-category="op-2">
             <a href="pages/article_004_depressao.html">
               <div class="article-img">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt_OKfD8K15jLegRuNAOrTXrfm31ZwmbWmKw&usqp=CAU" alt="" />
@@ -116,7 +129,7 @@
               </div>
             </a>
           </div> <!--- Depressão --->
-          <div class="article-box-content">
+          <div class="article-box-content" data-category="op-4">
             <a href="pages/article_005_yoga.html">
               <div class="article-img">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYa0KnjMGjo-cvPJ_UMa2f6qyfMATcEtT1VA&usqp=CAU" alt="" />
@@ -154,5 +167,7 @@
 	    </div>
 	  </div>
 	</section>
+
+  <script src="src/main.js"></script>
 </body>
 </html>
