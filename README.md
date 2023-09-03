@@ -10,5 +10,4 @@ O MindSetPlus foi criado pela Zephyr Interactive, uma equipe especializada no de
 
 Convidamos você a explorar o MindSetPlus agora mesmo! Após navegar pelo site, adoraríamos receber seu feedback. Compartilhe conosco suas impressões, sentimentos e se a experiência atendeu às suas expectativas!
 
-- [Acesse Agora](https://mindsetplusbr.netlify.app/)
 - Envie seu feedback para parthenon.contact@gmail.com
